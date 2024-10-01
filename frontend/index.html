@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD Álbunes de Música</title>
+</head>
+<body>
+  <h1>CRUD de Álbumes de Música</h1>
+
+  <!-- Formulario de Álbum -->
+  <form id="albumForm">
+    <label>Título: <input type="text" id="title" required></label><br>
+    <label>Artista: <input type="text" id="artist" required></label><br>
+    <label>Año: <input type="number" id="year" required></label><br>
+    <label>Género: <input type="text" id="genre"></label><br>
+    <label>Portada: <input type="file" id="coverImage" accept="image/*"></label><br>
+    <label>Pistas: <input type="file" id="tracks" multiple accept="audio/wav,audio/flac"></label><br>
+    <button type="submit">Guardar Álbum</button>
+  </form>
+
+  <!-- Listado de álbumes -->
+  <h2>Álbumes</h2>
+  <ul id="albumsList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
